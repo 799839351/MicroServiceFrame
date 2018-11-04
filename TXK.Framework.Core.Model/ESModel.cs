@@ -14,5 +14,7 @@ namespace TXK.Framework.Core.Model
         public string Name { set; get; }
         [Date(Name = "birthday",Format = "yyyy-MM-dd HH:mm:ss")]
         public DateTime? Birthday { set; get; }
+        [Number(Name ="age")]
+        public Int32 Age { set; get; }
     }
 }
