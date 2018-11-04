@@ -117,7 +117,7 @@ namespace TXK.Framework.Core.ElasticSearch
             }
         }
 
-        public static object GetAllIndex()
+        public static ICatResponse<CatIndicesRecord> GetAllIndex()
         {
             try
             {
