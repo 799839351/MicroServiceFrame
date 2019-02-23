@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+
 using Microsoft.AspNetCore.Mvc;
+using TXK.Framework.Core.Common;
 
 namespace TXK.API.Controllers
 {
@@ -18,6 +17,7 @@ namespace TXK.API.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
+            Class1.M3();
             return new string[] { "value1", "value2" };
         }
 

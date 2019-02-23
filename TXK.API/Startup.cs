@@ -12,6 +12,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.PlatformAbstractions;
 using Swashbuckle.AspNetCore.Swagger;
+using TXK.API.MiddleWare;
 using TXK.Framework.Core.Consul;
 
 namespace TXK.API
@@ -81,8 +82,14 @@ namespace TXK.API
             #endregion
 
             #region 启动时，默认注册Consul服务器
-          //  app.RegisterConsul(lifetime);
+            //  app.RegisterConsul(lifetime);
             #endregion
+
+
+            //异常处理中间件
+            app.UseMiddleware(typeof(ExceptionHandlerMiddleWare));
+
+
             app.UseMvc();
         }
     }

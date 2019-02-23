@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ConsoleApp\ConsoleApp.csproj" />
     <ProjectReference Include="..\TXK.Framework.Core.Common\TXK.Framework.Core.Common.csproj" />
     <ProjectReference Include="..\TXK.Framework.Core.Consul\TXK.Framework.Core.Consul.csproj" />
   </ItemGroup>
